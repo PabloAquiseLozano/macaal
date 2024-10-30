@@ -1,11 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{%static "styles/login.css"%}">
     <title>SISTEMA</title>
   </head>
   <body>
-    <div class="content"></div>
+    <div class="background-main">
+      <div class="login-container">
+        <div class="img-container">
+          <img src="{% static "images/gilda.png" %}" alt="" />
+        </div>
+        <div class="data-container">
+          <span>Usuario:</span>
+          <input type="text" />
+          <span>Contraseña:</span>
+          <input type="text" />
+          <button>ENVIAR</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
