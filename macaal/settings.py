@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    
-    #APPS INSTALADAS
+    # APPS INSTALADAS
     "login",
     "main",
     "fontawesomefree",
@@ -81,7 +80,7 @@ WSGI_APPLICATION = "macaal.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "NAME": BASE_DIR / "macaal.sqlite3",
     }
 }
 
@@ -121,11 +120,10 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-
 ]
 
 # Default primary key field type

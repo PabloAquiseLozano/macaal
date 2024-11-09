@@ -13,13 +13,13 @@
         <div class="img-container">
           <img src="{% static "images/gilda.png" %}" alt="" />
         </div>
-        <div class="data-container">
-          <span>Usuario:</span>
+        <form class="data-container" action="{}" method="post">
+          <label>Usuario:</label>
           <input type="text" name="userValue" />
-          <span>Contraseña:</span>
+          <label>Contraseña:</label>
           <input type="password" name="passValue" />
-          <button>ENVIAR</button>
-        </div>
+          <button type="submit">ENVIAR</button>
+        </form>
       </div>
     </div>
   </body>
