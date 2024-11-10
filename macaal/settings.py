@@ -38,9 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # APPS INSTALADAS
-    "login",
-    "main",
-    "fontawesomefree",
+    "accounts",
+    "home",
 ]
 
 MIDDLEWARE = [
@@ -56,6 +55,14 @@ MIDDLEWARE = [
 ROOT_URLCONF = "macaal.urls"
 
 TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.jinja2.Jinja2",
+        "DIRS": [],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "environment": "macaal.jinja2.environment",
+        },
+    },
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [],

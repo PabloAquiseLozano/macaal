@@ -1,6 +1,6 @@
 from django.shortcuts import redirect
-from models import Usuario
-from login import views
+from ..models import Usuario
+from accounts import views
 
 
 def loginValidate(userName, password):
