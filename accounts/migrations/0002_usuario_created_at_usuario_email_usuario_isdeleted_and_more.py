@@ -6,39 +6,46 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('login', '0001_initial'),
-    ]
+    dependencies = []
 
     operations = [
         migrations.AddField(
-            model_name='usuario',
-            name='created_at',
-            field=models.DateTimeField(auto_now_add=True, default=datetime.datetime(2024, 11, 10, 22, 8, 19, 592959, tzinfo=datetime.timezone.utc)),
+            model_name="usuario",
+            name="created_at",
+            field=models.DateTimeField(
+                auto_now_add=True,
+                default=datetime.datetime(
+                    2024, 11, 10, 22, 8, 19, 592959, tzinfo=datetime.timezone.utc
+                ),
+            ),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='usuario',
-            name='email',
-            field=models.EmailField(default='', max_length=254),
+            model_name="usuario",
+            name="email",
+            field=models.EmailField(default="", max_length=254),
         ),
         migrations.AddField(
-            model_name='usuario',
-            name='isDeleted',
-            field=models.CharField(choices=[(True, 'Eliminado'), (False, 'Habilitado')], default=False, max_length=10),
+            model_name="usuario",
+            name="isDeleted",
+            field=models.CharField(
+                choices=[(True, "Eliminado"), (False, "Habilitado")],
+                default=False,
+                max_length=10,
+            ),
         ),
         migrations.AddField(
-            model_name='usuario',
-            name='userPass',
-            field=models.TextField(default=''),
+            model_name="usuario",
+            name="userPass",
+            field=models.TextField(default=""),
         ),
         migrations.AlterField(
-            model_name='usuario',
-            name='carreer',
-            field=models.TextField(default=''),
+            model_name="usuario",
+            name="carreer",
+            field=models.TextField(default=""),
         ),
         migrations.AlterModelTable(
-            name='usuario',
-            table='users',
+            name="usuario",
+            table="users",
         ),
     ]

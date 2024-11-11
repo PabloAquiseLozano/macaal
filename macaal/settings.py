@@ -61,6 +61,7 @@ TEMPLATES = [
         "APP_DIRS": True,
         "OPTIONS": {
             "environment": "macaal.jinja2.environment",
+            "extensions": ["jinja2.ext.do"],
         },
     },
     {
