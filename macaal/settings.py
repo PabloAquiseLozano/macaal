@@ -57,7 +57,7 @@ ROOT_URLCONF = "macaal.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.jinja2.Jinja2",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "accounts/templates", BASE_DIR / "home/templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "environment": "macaal.jinja2.environment",
