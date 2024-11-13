@@ -11,11 +11,7 @@ class Usuario(models.Model):
     email = models.EmailField(default="")
     carreer = models.TextField(default="")
     userPass = models.TextField(default="")
-    isDeleted = models.CharField(
-        max_length=10,
-        choices=[(True, "Eliminado"), (False, "Habilitado")],
-        default=False,
-    )
+    isDeleted = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
